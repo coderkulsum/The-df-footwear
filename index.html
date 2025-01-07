@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoe Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5f0;
+            color: #4a4a4a;
+        }
+        header {
+            background-color: #d7ccc8;
+            color: #4a4a4a;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem 0;
+            background-color: #f5e6da;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #6d4c41;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #8d6e63;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background-color: #f5e6da;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #6d4c41;
+        }
+        #men h3 {
+            color: #8e6e53;
+        }
+        #women h3 {
+            color: #a9c46a;
+        }
+        #kids h3 {
+            color: #f0a07c;
+        }
+    footer {
+        background-color: #dbc8c8;
+        color: #5a7747;
+        text-align: center; /* Center-align text in the footer */
+    }
+    .footer-container {
+        max-width: 0px;
+        margin: 0 auto;
+    }
+    .footer-section {
+        text-align: center; /* Center text in individual sections */
+    }
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+    .footer-section ul li a {
+        color: #ffb74d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-section ul li a:hover {
+        color: #fff;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+    }
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: invert(90%);
+        transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+        transform: scale(1.2);
+    }
+    .footer-bottom {
+        text-align: center; /* Ensure bottom text is centered */
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+    }
+    .footer-bottom a {
+        color: #ffb74d;
+        text-decoration: none;
+    }
+    .footer-bottom a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <header>
+        <h1>Welcome to DF footwear</h1>
+        <h2>One stop for the premium quality shoes</h2>
+    </header>
+    <header>
+        <h1>Top quality shoes to add to your collection from sneakers to loafers</h1>
+        <h2>Explore our wide range of men's and women's shoes at the lowesst prices</h2>
+    </header>
+    <nav> 
+        <a href="index.html">Home</a>
+        <a href="products page.html">Products</a>
+        <a href="about us.html">About us</a>
+    </nav>
+    <section id="men" class="catalog">
+        <div class="product">
+            <img src="men shoe 1.jpg" alt="Men's Shoes 1">
+            <h3>Men's Running Shoes</h3>
+            <h4> Compliments every style</h4>
+            <p>Price: 1499</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="men shoe 2.jpg" alt="Men's Shoes 2">
+            <h3>Men's Casual Shoes</h3>
+            <h4> Perfect for everydar outfits</h4>
+            <p>Price: 1399</p>
+            <button class="buy-button">Buy Now</button>
+         </div>
+    </section>
+    <section id="women" class="catalog">
+        <div class="product">
+            <img src="women shoe 1.jpg" alt="Women's Shoes 1">
+            <h3>Women's Heels</h3>
+            <h4> Stylish and comfortable</h4>
+            <p>Price: 999</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="women shoe 2.jpg" alt="Women's Shoes 2">
+            <h3>Women's Sneakers</h3>
+            <h4>Suitable for workouts</h4>
+            <p>Price: 1199</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </section>
+    <section id="kids" class="catalog">
+        <div class="product">
+            <img src="kids 1.jpg" alt="Kids' Shoes 1">
+            <h3>Kids' Sports Shoes</h3>
+            <h4>Available in different colors</h4>
+            <p>Price: 899</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="kids 2.jpg" alt="Kids' Shoes 2">
+            <h3>Kids' Casual Shoes</h3>
+            <h4>Different sizes available</h4>
+            <p>Price: 1099</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+</body>
+</html>
+

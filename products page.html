@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shoe Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #79c2ac;
+            color: #333;
+        }
+
+        header {
+            background-color: #307c59;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: rgb(146, 189, 190);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .product-page {
+            padding: 40px;
+        }
+
+        .product-collection {
+            margin-bottom: 40px;
+        }
+
+        .product-category {
+            margin-bottom: 30px;
+        }
+
+        .product-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .product-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .product-info .btn {
+            background-color: #5c6435;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .product-info .btn:hover {
+            background-color: #555;
+        }
+
+        .why-choose-us,
+        .newsletter,
+        .customer-reviews {
+            margin-bottom: 40px;
+        }
+
+        .why-choose-us ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .why-choose-us li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            font-size: 1rem;
+            margin-right: 10px;
+            width: 250px;
+        }
+
+        .newsletter .btn {
+            background-color: #c47b7b;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .newsletter .btn:hover {
+            background-color: #555;
+        }
+
+        .customer-reviews .review {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Shoe Store
+                <p>Shop at the DF footwear</p>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products page.html">Products</a></li>
+                    <li><a href="about us.html">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <section class="product-collection">
+            <h2>Our Latest Collection</h2>
+
+            <div class="product-category">
+                <h3>Men's Collection</h3>
+
+                <div class="product">
+                    <img src="urban shoes.webp" alt="Urban Runner Sneakers">
+                    <div class="product-info">
+                        <h4>Urban Runner - rs3999</h4>
+                        <p>Lightweight and breathable sneakers for an active lifestyle.</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="oxford shoe.jpg" alt="Classic Oxford Leather Shoes">
+                    <div class="product-info">
+                        <h4>Classic Oxford Leather Shoes - rs2499</h4>
+                        <p>Elegant Oxfords crafted from premium leather for formal occasions.</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h3>Women's Collection</h3>
+
+                <div class="product">
+                    <img src="healed sandals.jpg" alt="Elegant Heeled Sandals">
+                    <div class="product-info">
+                        <h4>Elegant Heeled Sandals - rs1999</h4>
+                        <p>Chic and stylish sandals for a perfect evening look.</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="flats.jpg" alt="Slip-on Casual Flats">
+                    <div class="product-info">
+                        <h4>Slip-on Casual Flats - rs999</h4>
+                        <p>Comfortable flats perfect for everyday wear.</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h3>Unisex Collection</h3>
+
+                <div class="product">
+                    <img src="sport shoes.jpg" alt="Sporty Performance Shoes">
+                    <div class="product-info">
+                        <h4>Sporty Performance Shoes - rs 2999</h4>
+                        <p>Running shoes designed for performance with superior comfort.</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Premium Quality Materials</li>
+                <li>Free Shipping on Orders Over rs5000</li>
+                <li>30-Day Easy Returns</li>
+                <li>Customer Satisfaction Guaranteed</li>
+            </ul>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Connected</h2>
+            <p>Sign up for our newsletter to receive updates on new arrivals and exclusive offers.</p>
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn">Sign Up</button>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"Absolutely love my new Urban Runners! They’re lightweight, stylish, and so comfortable. Perfect for my busy lifestyle!" - Emily J.</p>
+            </div>
+            <div class="review">
+                <p>"The Classic Oxford shoes were just what I needed for my job interview. They fit perfectly and look amazing!" - Marcus H.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ShoeStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
